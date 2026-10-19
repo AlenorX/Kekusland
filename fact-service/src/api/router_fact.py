@@ -5,8 +5,8 @@ from fastapi import APIRouter, Response, status
 
 router = APIRouter(prefix='/fact')
 util = YAML()
-source = util.decode('yaml/config.yml')
-webhook_url = source['configuration']
+dict_config = util.decode('yaml/config.yml')
+webhook_url = dict_config['configuration']
 
 @router.get('/cat')
 async def facts_cat(resp: Response):

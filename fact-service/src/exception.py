@@ -1,0 +1,2 @@
+class FactsNotFound(Exception):
+    pass
