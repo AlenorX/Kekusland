@@ -1,0 +1,14 @@
+configuration:
+  WEBHOOK_URL:
+    cat-fact: "https://catfact.ninja/fact"
+  PATH_DATA: "database/data.json"
+  PATH_DATABASE: "facts.db"
+
+
+# {"configuration": 
+#    {
+#      "WEBHOOK_URL": {"cat-fact": "https://catfact.ninja/fact"},
+#      "PATH_DATA": "path/to/your_data.json"
+#      "PATH_DATABASE": "name_database.db"
+#    }
+#} 

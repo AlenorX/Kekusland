@@ -5,4 +5,5 @@ class YAML():
         pass
 
     def decode(self, path_file: str) -> dict:
-        pass
+        with open(path_file, 'r+') as file:
+            return yaml.safe_load(file)
