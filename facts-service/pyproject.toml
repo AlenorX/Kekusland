@@ -1,0 +1,22 @@
+[project]
+name = "facts-service"
+version = "0.1"
+description = ":)"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi (>=0.146.0,<0.147.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "fastapi (>=0.146.0,<0.147.0)",
+    "pytest (>=9.1.1,<10.0.0)"
+]
