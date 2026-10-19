@@ -1,7 +1,7 @@
 configuration:
   WEBHOOK_URL:
     cat-fact: "https://catfact.ninja/fact"
-  PATH_DATA: "database/data.json"
+  PATH_DATA: "data.json"
   PATH_DATABASE: "facts.db"
 
 
