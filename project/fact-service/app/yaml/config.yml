@@ -1,0 +1,19 @@
+configuration:
+  WEBHOOK_URL:
+    cat-fact: "https://catfact.ninja/fact"
+  DATABASE:
+    USERNAME: "TestUser"
+    PASSWORD: "TestPassword"
+    NAME_CONTAINER: "postgres-fact"
+    PORT: "5432"
+    NAME_DATABASE: "facts"
+    NAME_TABLE: "facts_api"
+
+
+
+# {"configuration": 
+#    {
+#      "WEBHOOK_URL": {"cat-fact": "https://catfact.ninja/fact"},
+#      "DATABASE": {"NAME_DATABASE": "facts.db", "NAME_TABLE": "facts_api"}
+#    }
+#} 

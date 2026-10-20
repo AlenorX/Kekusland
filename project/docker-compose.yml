@@ -1,0 +1,35 @@
+name: kekusland-public-api
+services:
+  postgres-db:
+    image: postgres:14.24
+    container_name: postgres-fact
+    expose:
+      - "5432"
+    restart: always
+    environment:
+      - POSTGRES_DB=facts
+      - POSTGRES_USER=TestUser
+      - POSTGRES_PASSWORD=TestPassword
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.db
+    networks:
+      - private-network
+
+
+  fact-service:
+    image: fact-service
+    build: ./fact-service
+    container_name: fact-service
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      - private-network
+      - public-network
+
+
+networks:
+  private-network:
+    internal: true
+  public-network:
+    driver: bridge
