@@ -11,7 +11,7 @@ services:
       - POSTGRES_USER=TestUser
       - POSTGRES_PASSWORD=TestPassword
     volumes:
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.db
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - private-network
 
