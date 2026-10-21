@@ -563,6 +563,17 @@ files = [
 ]
 
 [[package]]
+name = "logging"
+version = "0.4.9.6"
+description = "A logging module for Python"
+optional = false
+python-versions = "*"
+groups = ["main", "dev"]
+files = [
+    {file = "logging-0.4.9.6.tar.gz", hash = "sha256:26f6b50773f085042d301085bd1bf5d9f3735704db9f37c1ce6d8b85c38f2417"},
+]
+
+[[package]]
 name = "opentelemetry-api"
 version = "1.45.1"
 description = "OpenTelemetry Python API"
@@ -1114,4 +1125,4 @@ standard = ["httptools (>=0.8.0)", "python-dotenv (>=0.13)", "pyyaml (>=5.1)", "
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.14"
-content-hash = "aee97139c7a6bd01b85a7a81e150dc6869202422697c808e1e0e93aaa0df781a"
+content-hash = "85a2b989bcf3b1df355e8a4955fb50e06a52c279a5663e482c1007c0b15bf99b"
