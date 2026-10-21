@@ -5,11 +5,18 @@ Kekusland - публичное API c открытым исходным кодо�
 
 *Requirements*
 Зависимости проекта управляются с помощью Poetry, чтобы их установить, нужно скачать Poetry и загрузить зависимости.
-_Установка Poetry:_ pip install poetry
-_Установка зависимостей:_ poetry install
+_Установка Poetry:_
+```Python
+pip install poetry
+```
+_Установка зависимостей:_
+```Python 
+poetry install
+```
 _Python 3.14_
 
 *Структура проекта:*
+```Structure
 project/
 ├── database/
 │   └── init.sql
@@ -33,3 +40,4 @@ project/
 ├── docker-compose.yml
 ├── LICENSE
 └── README.md
+```
